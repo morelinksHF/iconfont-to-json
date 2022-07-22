@@ -12,6 +12,7 @@ npm i https://github.com/morelinksHF/iconfont-to-json.git -g
 
 ```
 iconfonttojson [input iconfont.css path] [output file name]
+
 ```
 
 # Example
@@ -19,6 +20,16 @@ iconfonttojson [input iconfont.css path] [output file name]
 ```
 iconfonttojson ./iconfont.css
 ```
+或者配置脚本
+
+1、在package.json文件中添加以下代码
+"scripts": {
+    "build:iconfont": "iconfonttojson src/iconfont/iconfont.css"
+},
+
+2、根据配置iconfont.css地址，生成iconfont.json文件
+npm run build:iconfont
+
 
 ```css
 @font-face {
